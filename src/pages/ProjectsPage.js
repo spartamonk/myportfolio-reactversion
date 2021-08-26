@@ -3,6 +3,9 @@ import { SectionTitleCenter } from '../components'
 import { AllSingleProject } from '../components'
 
 const ProjectsPage = () => {
+    React.useEffect(() => {
+      document.title = 'John Doe || Projects'
+    }, [])
  return (
    <>
      <header className='single-page-projects'>

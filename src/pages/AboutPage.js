@@ -1,6 +1,9 @@
 import React from 'react'
 import { SectionTitleCenter } from '../components'
 const AboutPage = () => {
+  React.useEffect(()=> {
+    document.title = 'John Doe || About'
+  },[])
   return (
     <section className='section single-page'>
       <SectionTitleCenter title='about me' />
